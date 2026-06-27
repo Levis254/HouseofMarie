@@ -39,8 +39,8 @@ export default function Contact() {
 
           <div className="space-y-6 text-xs tracking-wider uppercase font-light">
             <div className="space-y-1">
-              <span className="text-[9px] text-gold tracking-widest block">The Paris Boutique</span>
-              <p className="text-charcoal/80">Rue du Faubourg Saint-Honoré, 75008 Paris</p>
+              <span className="text-[9px] text-gold tracking-widest block">The New York Boutique</span>
+              <p className="text-charcoal/80">New York City, NY, United States</p>
             </div>
             <div className="space-y-1">
               <span className="text-[9px] text-gold tracking-widest block">Electronic Mail</span>
@@ -50,8 +50,8 @@ export default function Contact() {
             </div>
             <div className="space-y-1">
               <span className="text-[9px] text-gold tracking-widest block">Telephonic Liaison</span>
-              <a href="tel:+33140205050" className="text-charcoal/80 hover:text-gold transition-colors font-medium">
-                +33 1 40 20 50 50
+              <a href="tel:+19297245813" className="text-charcoal/80 hover:text-gold transition-colors font-medium">
+                +1 (929) 724-5813
               </a>
             </div>
           </div>
