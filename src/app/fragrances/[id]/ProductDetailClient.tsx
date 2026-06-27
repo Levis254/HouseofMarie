@@ -194,11 +194,11 @@ export default function ProductDetailClient({ id }: { id: string }) {
               </button>
               <button
                 onClick={handleWishlistToggle}
-                className="px-6 text-center text-xs tracking-[0.25em] uppercase border border-beige hover:border-gold text-charcoal py-4 transition-all duration-300 font-serif flex items-center justify-center gap-2"
+                className="px-6 text-center text-xs tracking-[0.25em] uppercase border border-beige hover:border-red text-charcoal py-4 transition-all duration-300 font-serif flex items-center justify-center gap-2"
                 aria-label="Add to wishlist"
               >
                 <svg
-                  className={`w-4 h-4 transition-colors ${isSaved ? 'fill-gold text-gold' : 'text-charcoal/60'}`}
+                  className={`w-4 h-4 transition-colors ${isSaved ? 'fill-red text-red' : 'text-charcoal/60 hover:text-red'}`}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

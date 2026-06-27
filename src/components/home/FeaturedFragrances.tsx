@@ -70,7 +70,7 @@ export default function FeaturedFragrances() {
                     >
                       <svg
                         className={`w-4.5 h-4.5 transition-colors ${
-                          isSaved ? 'fill-gold text-gold' : 'text-charcoal/60 hover:text-gold'
+                          isSaved ? 'fill-red text-red' : 'text-charcoal/60 hover:text-red'
                         }`}
                         fill="none"
                         viewBox="0 0 24 24"
