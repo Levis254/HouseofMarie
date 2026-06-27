@@ -32,14 +32,14 @@ export default function StoryPage() {
               Chapter I
             </span>
             <h2 className="font-serif text-2xl md:text-3xl tracking-wider uppercase font-light text-charcoal">
-              Parisian Roots, Grasse Fields
+              New York Roots, Botanical Artistry
             </h2>
             <div className="w-8 h-[1px] bg-beige"></div>
             <p className="text-xs md:text-sm text-charcoal/60 leading-relaxed font-light">
-              House of Rosemarie was conceived in Paris, born from a desire to escape the industrialization of modern commercial perfumes. Recognizing that true fragrance is an intimate extension of soul and identity, our founders traveled south to the fertile valley of Grasse—the world capital of perfumery.
+              House of Rosemarie was conceived in New York, born from a desire to escape the industrialization of modern commercial perfumes. Recognizing that true fragrance is an intimate extension of soul and identity, our founders set out to source the finest natural ingredients from sustainable flower fields and generational cultivators across the globe.
             </p>
             <p className="text-xs md:text-sm text-charcoal/60 leading-relaxed font-light">
-              Here, we established exclusive partnerships with generational flower cultivators, ensuring that our harvests of Jasmine, Centifolia Rose, and Neroli are grown sustainably and picked by hand under the early morning dew.
+              We established exclusive partnerships with boutique farms, ensuring that our harvests of Jasmine, Centifolia Rose, and Neroli are grown organically and picked by hand under the early morning dew to retain their purest olfactory essence.
             </p>
           </div>
           <div className="flex-1 w-full order-1 md:order-2">
@@ -111,7 +111,7 @@ export default function StoryPage() {
           </h2>
           <div className="w-8 h-[1px] bg-beige mx-auto"></div>
           <p className="text-xs md:text-sm text-charcoal/60 leading-relaxed font-light max-w-2xl mx-auto">
-            As we step forward, our digital experience is evolving. Soon, members will be able to access the Boutique Registry to log personalized olfactory profiles, order custom-labeled maceration bottles, manage subscription refills, and receive invitations to private scent launches in Paris and Grasse.
+            As we step forward, our digital experience is evolving. Soon, members will be able to access the Boutique Registry to log personalized olfactory profiles, order custom-labeled maceration bottles, manage subscription refills, and receive invitations to private scent launches in New York.
           </p>
           <div className="pt-6">
             <Link

@@ -29,7 +29,7 @@ export default function Hero() {
       <div className="relative z-20 text-center px-4 max-w-5xl mx-auto flex flex-col items-center select-none text-ivory">
         {/* Micro-label */}
         <span className="text-[10px] md:text-xs tracking-[0.4em] uppercase font-light text-gold mb-6 animate-fade-in">
-          Haute Parfumerie Paris
+          Haute Parfumerie New York
         </span>
         
         {/* Main Title */}

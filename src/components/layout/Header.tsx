@@ -123,7 +123,7 @@ export default function Header() {
               <span className={`text-[8px] tracking-[0.5em] uppercase font-light -mt-0.5 transition-opacity duration-300 ${
                 scrolled || !isHome ? 'text-gold' : 'text-ivory/60'
               }`}>
-                PARIS
+                NEW YORK
               </span>
             </Link>
           </div>

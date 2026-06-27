@@ -5,7 +5,7 @@ export const products: Product[] = [
     id: 'rosemarie-no1',
     name: 'Rosemarie No. 1',
     subtitle: 'L\'Obscurité Dorée',
-    story: 'Designed for unforgettable evenings. A captivating dialogue between bright Mediterranean citrus and deeply seductive nocturnal woods, capturing the essence of Parisian nights.',
+    story: 'Designed for unforgettable evenings. A captivating dialogue between bright Mediterranean citrus and deeply seductive nocturnal woods, capturing the essence of New York nights.',
     description: 'Rosemarie No. 1 is the signature formulation of the House. It represents the duality of brightness and depth, blending delicate floral petals with heavy amber elements for a scent trail that lingers beautifully. Every spray is a step into a dimly lit avenue of gold reflections.',
     notes: {
       top: ['Bergamot', 'Lemon Zest', 'Cardamom'],
