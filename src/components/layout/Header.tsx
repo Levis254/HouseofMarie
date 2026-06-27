@@ -79,11 +79,11 @@ export default function Header() {
             : 'bg-ivory border-b border-beige/40 py-6 text-charcoal'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
+        <div className="relative max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
           {/* Mobile Menu Icon */}
           <button
             onClick={() => setMobileMenuOpen(true)}
-            className="md:hidden p-1 focus:outline-none hover:text-gold transition-colors"
+            className="lg:hidden p-1 focus:outline-none hover:text-gold transition-colors"
             aria-label="Open navigation menu"
           >
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -92,7 +92,7 @@ export default function Header() {
           </button>
 
           {/* Left Navigation (Desktop) */}
-          <nav className="hidden md:flex items-center space-x-8 text-xs uppercase tracking-[0.25em] font-medium">
+          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8 text-xs uppercase tracking-[0.25em] font-medium">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -143,7 +143,7 @@ export default function Header() {
                   setAuthOpen(true);
                 }
               }}
-              className="p-1 hover:text-gold transition-colors duration-300 relative group"
+              className="hidden lg:block p-1 hover:text-gold transition-colors duration-300 relative group"
               aria-label="User account"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -162,7 +162,7 @@ export default function Header() {
             {/* Wishlist */}
             <Link
               href="/fragrances?filter=wishlist"
-              className="p-1 hover:text-gold transition-colors duration-300 relative"
+              className="hidden lg:inline-flex p-1 hover:text-gold transition-colors duration-300 relative"
               aria-label="View wishlist"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -231,6 +231,28 @@ export default function Header() {
                   {link.name}
                 </Link>
               ))}
+              <hr className="border-beige/30 my-2" />
+              <Link
+                href="/fragrances?filter=wishlist"
+                className="hover:text-gold transition-colors text-charcoal flex items-center gap-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Wishlist ({wishlist.length})
+              </Link>
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  if (isAuthenticated) {
+                    logout();
+                    showToast('You have signed out.');
+                  } else {
+                    setAuthOpen(true);
+                  }
+                }}
+                className="hover:text-gold transition-colors text-charcoal text-left uppercase tracking-[0.3em]"
+              >
+                {isAuthenticated ? `Sign Out (${user?.name})` : 'Access Account'}
+              </button>
             </nav>
           </div>
           <div className="border-t border-beige/40 pt-6">
