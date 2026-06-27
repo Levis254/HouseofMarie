@@ -102,7 +102,7 @@ export default function Header() {
           </button>
 
           {/* Left Navigation (Desktop) - First 3 links */}
-          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8 text-xs uppercase tracking-[0.25em]">
+          <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6 text-xs uppercase tracking-[0.18em]">
             {navLinks.slice(0, 3).map((link) => (
               <Link
                 key={link.name}
@@ -117,7 +117,7 @@ export default function Header() {
           {/* Logo (Centered) */}
           <div className="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center">
             <Link href="/" className="group flex flex-col items-center select-none">
-              <span className="font-serif text-xl md:text-2xl lg:text-3xl tracking-[0.3em] font-light transition-all duration-300 group-hover:text-gold">
+              <span className="font-serif text-lg md:text-xl lg:text-[22px] xl:text-[24px] tracking-[0.22em] font-light transition-all duration-300 group-hover:text-gold text-center whitespace-nowrap">
                 HOUSE OF ROSEMARIE
               </span>
               <span className={`text-[8px] tracking-[0.5em] uppercase font-light -mt-0.5 transition-opacity duration-300 ${
@@ -129,9 +129,9 @@ export default function Header() {
           </div>
 
           {/* Right Actions */}
-          <div className="flex items-center space-x-4 md:space-x-6">
+          <div className="flex items-center space-x-3 lg:space-x-4">
             {/* Right Navigation Links (Desktop) - Last 2 links */}
-            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8 text-xs uppercase tracking-[0.25em] mr-4">
+            <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6 text-xs uppercase tracking-[0.18em] mr-3">
               {navLinks.slice(3).map((link) => (
                 <Link
                   key={link.name}
