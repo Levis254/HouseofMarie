@@ -53,6 +53,16 @@ export default function Header() {
     { name: 'Contact', path: '/#contact' },
   ];
 
+  const getLinkClassName = (path: string) => {
+    const isActive = pathname === path;
+    const baseClass = "transition-colors duration-300 relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gold after:transition-transform after:duration-300 font-semibold";
+    if (isActive) {
+      return `${baseClass} text-gold after:scale-x-100`;
+    }
+    const colorClass = scrolled || !isHome ? 'text-charcoal hover:text-gold' : 'text-ivory hover:text-gold';
+    return `${baseClass} ${colorClass} after:scale-x-0 hover:after:scale-x-100`;
+  };
+
   const handleAuthSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!authEmail) return;
@@ -91,15 +101,13 @@ export default function Header() {
             </svg>
           </button>
 
-          {/* Left Navigation (Desktop) */}
-          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8 text-xs uppercase tracking-[0.25em] font-medium">
-            {navLinks.map((link) => (
+          {/* Left Navigation (Desktop) - First 3 links */}
+          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8 text-xs uppercase tracking-[0.25em]">
+            {navLinks.slice(0, 3).map((link) => (
               <Link
                 key={link.name}
                 href={link.path}
-                className={`hover:text-gold transition-colors duration-300 relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gold after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 ${
-                  pathname === link.path ? 'text-gold after:scale-x-100' : ''
-                }`}
+                className={getLinkClassName(link.path)}
               >
                 {link.name}
               </Link>
@@ -122,6 +130,19 @@ export default function Header() {
 
           {/* Right Actions */}
           <div className="flex items-center space-x-4 md:space-x-6">
+            {/* Right Navigation Links (Desktop) - Last 2 links */}
+            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8 text-xs uppercase tracking-[0.25em] mr-4">
+              {navLinks.slice(3).map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.path}
+                  className={getLinkClassName(link.path)}
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </nav>
+
             {/* Search */}
             <button
               onClick={() => setSearchOpen(true)}
