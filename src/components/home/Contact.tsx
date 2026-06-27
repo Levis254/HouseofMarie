@@ -44,8 +44,8 @@ export default function Contact() {
             </div>
             <div className="space-y-1">
               <span className="text-[9px] text-gold tracking-widest block">Electronic Mail</span>
-              <a href="mailto:concierge@houseofmarie.com" className="text-charcoal/80 hover:text-gold transition-colors font-medium">
-                concierge@houseofmarie.com
+              <a href="mailto:concierge@houseofrosemarie.com" className="text-charcoal/80 hover:text-gold transition-colors font-medium">
+                concierge@houseofrosemarie.com
               </a>
             </div>
             <div className="space-y-1">

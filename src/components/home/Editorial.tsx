@@ -21,7 +21,7 @@ export default function Editorial() {
           
           <div className="space-y-6 text-sm text-charcoal/80 font-light leading-relaxed max-w-xl">
             <p className="font-serif text-lg md:text-xl italic text-charcoal/90 leading-relaxed font-normal">
-              “House of Marie believes fragrance is more than scent. It is identity, memory, and personal expression.”
+              “House of Rosemarie believes fragrance is more than scent. It is identity, memory, and personal expression.”
             </p>
             <p>
               A signature fragrance is a silent communicator, drawing the map of where you have been and the memories you have woven. Every blend is hand-poured in our ateliers to linger delicately on the skin, forming a singular bond with your natural essence.

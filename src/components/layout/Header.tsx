@@ -67,7 +67,7 @@ export default function Header() {
     e.preventDefault();
     if (!authEmail) return;
     await login(authEmail, authName || 'Valued Guest');
-    showToast(`Welcome to the House of Marie, ${authName || 'Guest'}.`);
+    showToast(`Welcome to the House of Rosemarie, ${authName || 'Guest'}.`);
     setAuthOpen(false);
     setAuthEmail('');
     setAuthName('');
@@ -118,7 +118,7 @@ export default function Header() {
           <div className="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center">
             <Link href="/" className="group flex flex-col items-center select-none">
               <span className="font-serif text-xl md:text-2xl lg:text-3xl tracking-[0.3em] font-light transition-all duration-300 group-hover:text-gold">
-                HOUSE OF MARIE
+                HOUSE OF ROSEMARIE
               </span>
               <span className={`text-[8px] tracking-[0.5em] uppercase font-light -mt-0.5 transition-opacity duration-300 ${
                 scrolled || !isHome ? 'text-gold' : 'text-ivory/60'
@@ -277,7 +277,7 @@ export default function Header() {
             </nav>
           </div>
           <div className="border-t border-beige/40 pt-6">
-            <span className="font-serif text-xs tracking-widest text-gold block mb-2">HOUSE OF MARIE</span>
+            <span className="font-serif text-xs tracking-widest text-gold block mb-2">HOUSE OF ROSEMARIE</span>
             <span className="text-[10px] tracking-wider text-charcoal/60 block">Crafted Memories. Bottled Elegance.</span>
           </div>
         </div>

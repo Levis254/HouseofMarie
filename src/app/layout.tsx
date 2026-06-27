@@ -19,21 +19,21 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "HOUSE OF MARIE | Luxury Fragrance House",
-  description: "Experience the luxury perfumes of House of Marie. Crafted memories, bottled elegance. Explore our olfactory craftsmanship, fragrance journal, and signature scents.",
-  keywords: "luxury perfume, fragrance house, House of Marie, fine fragrance, niche perfume, craft perfumery",
-  authors: [{ name: "House of Marie" }],
+  title: "HOUSE OF ROSEMARIE | Luxury Fragrance House",
+  description: "Experience the luxury perfumes of House of Rosemarie. Crafted memories, bottled elegance. Explore our olfactory craftsmanship, fragrance journal, and signature scents.",
+  keywords: "luxury perfume, fragrance house, House of Rosemarie, fine fragrance, niche perfume, craft perfumery",
+  authors: [{ name: "House of Rosemarie" }],
   openGraph: {
-    title: "HOUSE OF MARIE | Luxury Fragrance House",
+    title: "HOUSE OF ROSEMARIE | Luxury Fragrance House",
     description: "Crafted Memories. Bottled Elegance. Discover our hand-crafted, premium fragrances.",
-    url: "https://houseofmarie.com",
-    siteName: "House of Marie",
+    url: "https://houseofrosemarie.com",
+    siteName: "House of Rosemarie",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "HOUSE OF MARIE | Luxury Fragrance House",
+    title: "HOUSE OF ROSEMARIE | Luxury Fragrance House",
     description: "Crafted Memories. Bottled Elegance.",
   },
 };

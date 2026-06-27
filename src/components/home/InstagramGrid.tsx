@@ -14,7 +14,7 @@ export default function InstagramGrid() {
   ];
 
   const handlePostClick = () => {
-    showToast('Instagram connection: Navigating to @houseofmarie feed.', 'info');
+    showToast('Instagram connection: Navigating to @houseofrosemarie feed.', 'info');
   };
 
   return (
@@ -33,7 +33,7 @@ export default function InstagramGrid() {
             onClick={(e) => { e.preventDefault(); handlePostClick(); }}
             className="text-[11px] tracking-[0.25em] uppercase text-charcoal/50 hover:text-gold transition-colors block mt-2"
           >
-            @houseofmarie
+            @houseofrosemarie
           </a>
         </div>
 
@@ -49,7 +49,7 @@ export default function InstagramGrid() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={post.image}
-                alt="House of Marie Instagram Mood"
+                alt="House of Rosemarie Instagram Mood"
                 className="w-full h-full object-cover object-center transition-transform duration-[1.5s] group-hover:scale-105"
               />
 

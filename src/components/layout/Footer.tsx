@@ -19,7 +19,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
         {/* About column */}
         <div className="space-y-4">
-          <span className="font-serif text-lg tracking-[0.2em] font-light block">HOUSE OF MARIE</span>
+          <span className="font-serif text-lg tracking-[0.2em] font-light block">HOUSE OF ROSEMARIE</span>
           <p className="text-xs text-charcoal/60 leading-relaxed font-light">
             An independent fragrance house dedicated to the art of fine perfumery. We curate olfactory memories using the world's most exquisite and sustainably sourced ingredients.
           </p>
@@ -107,7 +107,7 @@ export default function Footer() {
 
       {/* Symmetrical bottom bar */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between border-t border-beige/30 pt-8 text-[10px] tracking-[0.2em] text-charcoal/45 uppercase">
-        <p>© {new Date().getFullYear()} House of Marie. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} House of Rosemarie. All rights reserved.</p>
         <p className="mt-2 md:mt-0 font-serif tracking-[0.3em]">Paris • Grasse • New York</p>
       </div>
     </footer>

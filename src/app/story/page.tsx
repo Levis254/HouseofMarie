@@ -17,7 +17,7 @@ export default function StoryPage() {
             Heritage & Vision
           </span>
           <h1 className="font-serif text-4xl md:text-6xl tracking-wide uppercase font-light leading-tight animate-fade-in-up">
-            The Legacy of Marie
+            The Legacy of Rosemarie
           </h1>
           <div className="w-12 h-[1px] bg-gold mx-auto my-6"></div>
           <p className="font-serif text-lg md:text-xl italic text-charcoal/80 leading-relaxed max-w-2xl mx-auto animate-fade-in-up [animation-delay:200ms]">
@@ -36,7 +36,7 @@ export default function StoryPage() {
             </h2>
             <div className="w-8 h-[1px] bg-beige"></div>
             <p className="text-xs md:text-sm text-charcoal/60 leading-relaxed font-light">
-              House of Marie was conceived in Paris, born from a desire to escape the industrialization of modern commercial perfumes. Recognizing that true fragrance is an intimate extension of soul and identity, our founders traveled south to the fertile valley of Grasse—the world capital of perfumery.
+              House of Rosemarie was conceived in Paris, born from a desire to escape the industrialization of modern commercial perfumes. Recognizing that true fragrance is an intimate extension of soul and identity, our founders traveled south to the fertile valley of Grasse—the world capital of perfumery.
             </p>
             <p className="text-xs md:text-sm text-charcoal/60 leading-relaxed font-light">
               Here, we established exclusive partnerships with generational flower cultivators, ensuring that our harvests of Jasmine, Centifolia Rose, and Neroli are grown sustainably and picked by hand under the early morning dew.
@@ -47,7 +47,7 @@ export default function StoryPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/editorial_house.png"
-                alt="House of Marie Paris Flatlay"
+                alt="House of Rosemarie Paris Flatlay"
                 className="w-full h-full object-cover object-center transition-transform duration-[2s] group-hover:scale-105"
               />
               <div className="absolute inset-4 border border-ivory/20 pointer-events-none"></div>
@@ -77,7 +77,7 @@ export default function StoryPage() {
             </h2>
             <div className="w-8 h-[1px] bg-beige"></div>
             <p className="text-xs md:text-sm text-charcoal/60 leading-relaxed font-light">
-              Unlike industrial scents that are synthesized in hours, every House of Marie formula undergoes a minimum of six months maturation. This slow maceration period allows our natural raw flower oils to fully dissolve and bond with our organic wheat alcohols, deepening the molecular fragrance and locking in a rich, multi-tiered scent trail.
+              Unlike industrial scents that are synthesized in hours, every House of Rosemarie formula undergoes a minimum of six months maturation. This slow maceration period allows our natural raw flower oils to fully dissolve and bond with our organic wheat alcohols, deepening the molecular fragrance and locking in a rich, multi-tiered scent trail.
             </p>
             <p className="text-xs md:text-sm text-charcoal/60 leading-relaxed font-light">
               In our laboratories, our perfumers work with glass flasks, brass scales, and natural oak barrels. The craft is rigorous, demanding absolute concentration and an uncompromising focus on the minute details that separate a simple scent from an unforgettable impression.
@@ -96,7 +96,7 @@ export default function StoryPage() {
             </p>
             <div className="w-12 h-[1px] bg-gold mx-auto"></div>
             <span className="text-[10px] tracking-[0.3em] uppercase text-charcoal/50 block font-light">
-              Marie de la Valère, Founder
+              Rosemarie de la Valère, Founder
             </span>
           </div>
         </div>

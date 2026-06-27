@@ -34,7 +34,7 @@ export default function Hero() {
         
         {/* Main Title */}
         <h1 className="font-serif text-5xl md:text-7xl lg:text-9xl tracking-[0.25em] font-light leading-none mb-6 animate-fade-in-up">
-          HOUSE OF MARIE
+          HOUSE OF ROSEMARIE
         </h1>
 
         {/* Subtitle */}
