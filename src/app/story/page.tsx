@@ -36,7 +36,7 @@ export default function StoryPage() {
             </h2>
             <div className="w-8 h-[1px] bg-beige"></div>
             <p className="text-xs md:text-sm text-charcoal/60 leading-relaxed font-light">
-              House of Rosemarie was conceived in Ohio, born from a desire to escape the industrialization of modern commercial perfumes. Recognizing that true fragrance is an intimate extension of soul and identity, our founders set out to source the finest natural ingredients from sustainable flower fields and generational cultivators across the globe.
+              House of RoseMarie was founded by Jumaane Dale, conceived in Ohio as an everlasting tribute to his mother, RoseMarie. Driven by a desire to escape the industrialization of modern commercial perfumes and capture the true essence of maternal elegance, Jumaane set out to source the finest natural ingredients from sustainable flower fields and generational cultivators across the globe.
             </p>
             <p className="text-xs md:text-sm text-charcoal/60 leading-relaxed font-light">
               We established exclusive partnerships with boutique farms, ensuring that our harvests of Jasmine, Centifolia Rose, and Neroli are grown organically and picked by hand under the early morning dew to retain their purest olfactory essence.
@@ -96,7 +96,7 @@ export default function StoryPage() {
             </p>
             <div className="w-12 h-[1px] bg-gold mx-auto"></div>
             <span className="text-[10px] tracking-[0.3em] uppercase text-charcoal/50 block font-light">
-              Rosemarie de la Valère, Founder
+              Jumaane Dale, Founder
             </span>
           </div>
         </div>

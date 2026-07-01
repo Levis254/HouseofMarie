@@ -112,7 +112,7 @@ export default function Footer() {
 
       {/* Symmetrical bottom bar */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between border-t border-beige/30 pt-8 text-[10px] tracking-[0.2em] text-charcoal/45 uppercase">
-        <p>© {new Date().getFullYear()} House of Rosemarie. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} House of RoseMarie. All rights reserved.</p>
         <p className="mt-2 md:mt-0 font-serif tracking-[0.3em]">Westlake, Ohio</p>
       </div>
     </footer>

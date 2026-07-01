@@ -67,7 +67,7 @@ export default function Header() {
     e.preventDefault();
     if (!authEmail) return;
     await login(authEmail, authName || 'Valued Guest');
-    showToast(`Welcome to the House of Rosemarie, ${authName || 'Guest'}.`);
+    showToast(`Welcome to the House of RoseMarie, ${authName || 'Guest'}.`);
     setAuthOpen(false);
     setAuthEmail('');
     setAuthName('');
