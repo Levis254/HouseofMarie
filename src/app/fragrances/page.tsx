@@ -102,12 +102,12 @@ function FragranceCatalogContent() {
       </div>
 
       {/* Filter Tabs */}
-      <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 border-b border-beige/40 pb-6 mb-12 text-[10px] tracking-[0.25em] uppercase font-medium">
+      <div className="flex overflow-x-auto whitespace-nowrap pb-4 md:pb-6 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-none justify-start md:flex-wrap md:justify-center gap-6 md:gap-8 border-b border-beige/40 mb-12 text-[10px] tracking-[0.25em] uppercase font-medium">
         {categories.map((cat) => (
           <button
             key={cat.id}
             onClick={() => setActiveFilter(cat.id)}
-            className={`pb-2 relative transition-colors duration-300 hover:text-gold ${
+            className={`pb-2 relative transition-colors duration-300 hover:text-gold flex-shrink-0 ${
               activeFilter === cat.id ? 'text-gold font-semibold' : 'text-charcoal/60'
             }`}
           >
@@ -230,7 +230,7 @@ function FragranceCatalogContent() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 mt-8 pt-6 border-t border-beige/20">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-6 border-t border-beige/20">
                   <Link
                     href={`/fragrances/${product.id}`}
                     className="text-center text-[10px] tracking-[0.25em] uppercase border border-charcoal py-3 hover:bg-charcoal hover:text-ivory transition-all duration-300 font-serif font-medium"

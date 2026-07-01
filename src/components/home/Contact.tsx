@@ -94,7 +94,7 @@ export default function Contact() {
         </div>
 
         {/* Right Column: Form */}
-        <div className="flex-1 w-full bg-beige/5 border border-beige/35 p-8 md:p-12 shadow-sm">
+        <div className="flex-1 w-full bg-beige/5 border border-beige/35 p-6 md:p-12 shadow-sm">
           <form onSubmit={handleSubmit} className="space-y-8">
             <div className="relative z-0 w-full mb-6 group">
               <input

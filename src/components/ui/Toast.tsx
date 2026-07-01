@@ -35,13 +35,13 @@ export default function Toast() {
   }, []);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none">
+    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 md:left-auto md:right-6 md:translate-x-0 z-50 flex flex-col items-center md:items-end gap-2 pointer-events-none w-[calc(100%-2rem)] md:w-auto max-w-md">
       {toasts.map(toast => (
         <div
           key={toast.id}
-          className="px-6 py-4 bg-charcoal text-ivory border border-gold/30 font-serif text-sm tracking-widest shadow-2xl flex items-center gap-3 transition-all duration-500 pointer-events-auto animate-fade-in-up"
+          className="px-6 py-4 bg-charcoal text-ivory border border-gold/30 font-serif text-sm tracking-widest shadow-2xl flex items-center gap-3 transition-all duration-500 pointer-events-auto animate-fade-in-up w-full md:w-auto"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
+          <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse flex-shrink-0"></span>
           <span>{toast.message}</span>
           <button
             onClick={() => setToasts(prev => prev.filter(t => t.id !== toast.id))}

@@ -124,7 +124,7 @@ export default function FeaturedFragrances() {
                 </div>
 
                 {/* Actions */}
-                <div className="grid grid-cols-2 gap-4 mt-8 pt-6 border-t border-beige/20">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-6 border-t border-beige/20">
                   <Link
                     href={`/fragrances/${product.id}`}
                     className="text-center text-[10px] tracking-[0.25em] uppercase border border-charcoal py-3 hover:bg-charcoal hover:text-ivory transition-all duration-300 font-serif font-medium"

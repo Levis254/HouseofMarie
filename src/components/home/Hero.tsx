@@ -33,7 +33,7 @@ export default function Hero() {
         </span>
         
         {/* Main Title */}
-        <h1 className="font-serif text-5xl md:text-7xl lg:text-9xl tracking-[0.25em] font-light leading-none mb-6 animate-fade-in-up">
+        <h1 className="font-serif text-3xl sm:text-4xl md:text-7xl lg:text-9xl tracking-[0.15em] sm:tracking-[0.25em] font-light leading-none mb-6 animate-fade-in-up">
           HOUSE OF ROSEMARIE
         </h1>
 

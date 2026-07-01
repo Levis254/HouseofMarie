@@ -135,28 +135,34 @@ export default function ProductDetailClient({ id }: { id: string }) {
                 Olfactory Pyramid
               </span>
               
-              <div className="grid grid-cols-3 gap-4 text-xs font-light">
-                <div className="space-y-1">
+              <div className="flex flex-col sm:grid sm:grid-cols-3 gap-4 sm:gap-6 text-xs font-light">
+                <div className="space-y-1 flex flex-col sm:block">
                   <span className="text-[9px] tracking-widest uppercase text-charcoal/50 block font-medium">Top Notes</span>
-                  <ul className="space-y-0.5 text-charcoal/80">
+                  <ul className="flex flex-wrap gap-x-1 text-charcoal/80 sm:block sm:space-y-0.5">
                     {product.notes.top.map((note, i) => (
-                      <li key={i}>{note}</li>
+                      <li key={i} className="inline-block sm:block">
+                        {note}{i < product.notes.top.length - 1 && <span className="sm:hidden">,</span>}
+                      </li>
                     ))}
                   </ul>
                 </div>
-                <div className="space-y-1">
+                <div className="space-y-1 flex flex-col sm:block">
                   <span className="text-[9px] tracking-widest uppercase text-charcoal/50 block font-medium">Heart Notes</span>
-                  <ul className="space-y-0.5 text-charcoal/80">
+                  <ul className="flex flex-wrap gap-x-1 text-charcoal/80 sm:block sm:space-y-0.5">
                     {product.notes.heart.map((note, i) => (
-                      <li key={i}>{note}</li>
+                      <li key={i} className="inline-block sm:block">
+                        {note}{i < product.notes.heart.length - 1 && <span className="sm:hidden">,</span>}
+                      </li>
                     ))}
                   </ul>
                 </div>
-                <div className="space-y-1">
+                <div className="space-y-1 flex flex-col sm:block">
                   <span className="text-[9px] tracking-widest uppercase text-charcoal/50 block font-medium">Base Notes</span>
-                  <ul className="space-y-0.5 text-charcoal/80">
+                  <ul className="flex flex-wrap gap-x-1 text-charcoal/80 sm:block sm:space-y-0.5">
                     {product.notes.base.map((note, i) => (
-                      <li key={i}>{note}</li>
+                      <li key={i} className="inline-block sm:block">
+                        {note}{i < product.notes.base.length - 1 && <span className="sm:hidden">,</span>}
+                      </li>
                     ))}
                   </ul>
                 </div>
@@ -166,12 +172,12 @@ export default function ProductDetailClient({ id }: { id: string }) {
             {/* Size Configurations */}
             <div className="space-y-3">
               <span className="text-[9px] tracking-widest uppercase text-charcoal/50 block">Select Volume</span>
-              <div className="flex flex-wrap gap-4">
+              <div className="grid grid-cols-3 gap-2 sm:gap-4">
                 {sizes.map((sz) => (
                   <button
                     key={sz.id}
                     onClick={() => setSelectedSize(sz.id)}
-                    className={`flex-1 min-w-[100px] border px-4 py-3 text-center transition-all duration-300 ${
+                    className={`border px-2 sm:px-4 py-3 text-center transition-all duration-300 ${
                       selectedSize === sz.id
                         ? 'border-charcoal bg-charcoal text-ivory'
                         : 'border-beige hover:border-gold text-charcoal/80'

@@ -117,7 +117,7 @@ export default function Header() {
           {/* Logo (Centered) */}
           <div className="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center">
             <Link href="/" className="group flex flex-col items-center select-none">
-              <span className="font-serif text-lg md:text-xl lg:text-[22px] xl:text-[24px] tracking-[0.22em] font-light transition-all duration-300 group-hover:text-gold text-center whitespace-nowrap">
+              <span className="font-serif text-xs min-375:text-sm sm:text-base md:text-xl lg:text-[22px] xl:text-[24px] tracking-[0.12em] min-375:tracking-[0.18em] sm:tracking-[0.22em] font-light transition-all duration-300 group-hover:text-gold text-center whitespace-nowrap">
                 HOUSE OF ROSEMARIE
               </span>
               <span className={`text-[8px] tracking-[0.5em] uppercase font-light -mt-0.5 transition-opacity duration-300 ${
@@ -414,7 +414,7 @@ export default function Header() {
           </svg>
         </button>
         <div className="w-full max-w-2xl px-6 flex flex-col items-center">
-          <label htmlFor="search-input" className="font-serif text-gold text-lg tracking-[0.3em] uppercase mb-4 block">Search the House</label>
+          <label htmlFor="search-input" className="font-serif text-gold text-sm sm:text-lg tracking-[0.3em] uppercase mb-4 block">Search the House</label>
           <div className="w-full border-b border-ivory/30 focus-within:border-gold transition-colors py-2 flex items-center gap-4">
             <input
               id="search-input"
@@ -422,7 +422,7 @@ export default function Header() {
               placeholder="e.g. Marie No. 1, jasmine, wood..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="bg-transparent text-ivory font-serif text-2xl tracking-widest placeholder-ivory/30 outline-none w-full"
+              className="bg-transparent text-ivory font-serif text-lg sm:text-2xl tracking-widest placeholder-ivory/30 outline-none w-full"
               onKeyDown={(e) => {
                 if (e.key === 'Enter') {
                   setSearchOpen(false);
@@ -451,7 +451,7 @@ export default function Header() {
         onClick={() => setAuthOpen(false)}
       >
         <div
-          className="bg-ivory border border-gold/20 shadow-2xl p-8 max-w-md w-full relative mx-4 animate-fade-in-up"
+          className="bg-ivory border border-gold/20 shadow-2xl p-6 sm:p-8 max-w-md w-full relative mx-4 animate-fade-in-up"
           onClick={(e) => e.stopPropagation()}
         >
           <button
