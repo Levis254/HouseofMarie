@@ -14,7 +14,7 @@ export default function InstagramGrid() {
   ];
 
   const handlePostClick = () => {
-    showToast('Instagram connection: Navigating to @houseofrosemarie feed.', 'info');
+    window.open('https://www.instagram.com/houseofrosemarie/', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -29,8 +29,9 @@ export default function InstagramGrid() {
             Captured Moments
           </h2>
           <a
-            href="#instagram"
-            onClick={(e) => { e.preventDefault(); handlePostClick(); }}
+            href="https://www.instagram.com/houseofrosemarie/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-[11px] tracking-[0.25em] uppercase text-charcoal/50 hover:text-gold transition-colors block mt-2"
           >
             @houseofrosemarie

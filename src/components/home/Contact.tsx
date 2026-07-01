@@ -60,8 +60,9 @@ export default function Contact() {
           {/* Social icons */}
           <div className="flex items-center space-x-6 pt-4 text-charcoal/60">
             <a
-              href="#instagram"
-              onClick={(e) => { e.preventDefault(); showToast('Instagram link click'); }}
+              href="https://www.instagram.com/houseofrosemarie/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-gold transition-colors"
               aria-label="Instagram profile"
             >

@@ -57,7 +57,12 @@ export default function Footer() {
           <span className="text-[10px] tracking-[0.25em] uppercase font-semibold block mb-4">Boutique</span>
           <ul className="space-y-2.5 text-xs text-charcoal/70 font-light">
             <li>
-              <a href="#instagram" onClick={(e) => { e.preventDefault(); showToast('Instagram connection placeholder'); }} className="hover:text-gold transition-colors">
+              <a
+                href="https://www.instagram.com/houseofrosemarie/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gold transition-colors"
+              >
                 Instagram
               </a>
             </li>
